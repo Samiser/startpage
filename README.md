@@ -21,4 +21,4 @@ shortcuts again executed when a keyword is typed
 the page reloads when a new background/colour scheme is set via pywal.
 for this to work you need to create the symlink `wal -> /home/user/.cache/wal/wal`
 
-![autoreload](images/autoreload.gif)
+![autoupdate](images/autoupdate.gif)

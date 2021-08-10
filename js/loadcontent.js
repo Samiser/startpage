@@ -97,3 +97,26 @@ document.onkeydown = function(event) {
 			search()
 	}
 }
+
+// check for new background
+
+background = ""
+
+function compare_background(b) {
+    if (background != b) {
+        background = b;
+        location.reload();
+    }
+}
+
+function update_background() {
+    fetch('wal')
+        .then(r => r.text())
+        .then(t => compare_background(t))
+}
+
+fetch('wal')
+    .then(r => r.text())
+    .then(t => background = t)
+
+setInterval(update_background, 100)

@@ -15,3 +15,10 @@ page loads if the page name is typed, checked on each keypress.
 shortcuts again executed when a keyword is typed
 
 ![shortcuts](images/shortcuts.gif)
+
+## automatic reloading
+
+the page reloads when a new background/colour scheme is set via pywal.
+for this to work you need to create the symlink `wal -> /home/user/.cache/wal/wal`
+
+![autoreload](images/autoreload.gif)
